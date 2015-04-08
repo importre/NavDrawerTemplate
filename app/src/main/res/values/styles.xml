@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="Root.Theme" parent="Theme.AppCompat.Light" />
+
+    <style name="Root.Widget" parent="Theme.AppCompat" />
+
+    <style name="Theme" parent="Root.Theme" />
+
+    <style name="Theme.Base" parent="Theme">
+        <item name="actionBarIconColor">@color/white</item>
+        <item name="popupItemBackground">?selectableItemBackground</item>
+        <item name="photoItemForeground">?selectableItemBackground</item>
+        <item name="photoItemForegroundBorderless">?selectableItemBackgroundBorderless</item>
+        <item name="actionBarInsetStart">@dimen/keyline_2</item>
+
+        <item name="colorPrimary">@color/main</item>
+        <item name="colorPrimaryDark">@color/main_dark</item>
+        <item name="colorAccent">@color/main_accent</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+    </style>
+
+    <style name="Theme.Main" parent="Theme.Base" />
+
+    <style name="ActionBarPopupThemeOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ActionBarThemeOverlay" parent="">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="colorControlNormal">?actionBarIconColor</item>
+        <item name="colorControlHighlight">#3fff</item>
+    </style>
+
+    <style name="ActionBar.TitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">@dimen/toolbar_title_size</item>
+    </style>
+
+    <style name="ActionBar.SubTitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">@dimen/toolbar_subtitle_size</item>
+    </style>
+
+    <style name="ActionBar.TitleText.Inverse" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>
